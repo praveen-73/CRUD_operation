@@ -15,13 +15,16 @@
         <h1>Add Member</h1>
         <form action="{% url 'addrec' %}" method="post">
             {% csrf_token %}
-            <label for="">First Name</label><br><br>
-            <input type="text" name="first"><br><br>
-            <label for="">Last Name</label><br><br>
-            <input type="text" name="last"><br><br>
-            <label for="">Country</label><br><br>
-            <input type="text" name="country"><br><br>
-            <button type="submit" id="new">Submit</button>
+            <label for="first">First Name</label><br>
+    <input type="text" id="first" name="first"><br><br>
+
+    <label for="last">Last Name</label><br>
+    <input type="text" id="last" name="last"><br><br>
+
+    <label for="country">Country</label><br>
+    <input type="text" id="country" name="country"><br><br>
+
+    <button type="submit" id="new">Submit</button>
         </form>
     </div>
 </body>
